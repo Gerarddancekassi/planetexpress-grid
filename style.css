@@ -175,7 +175,7 @@ body{
 article{
   padding: 2em;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 41rem) {
   /* For mobile phones: */
   top-container{
     flex-direction: column;
