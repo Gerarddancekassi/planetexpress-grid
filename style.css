@@ -67,8 +67,13 @@ body{
 .ship {  
   align-self: center;
   width:100vw;
+<<<<<<< HEAD
   padding-top: 60em;
   padding-bottom: 60em;
+=======
+  padding-top: 60rem;
+  padding-bottom: 60rem;
+>>>>>>> b01bf385b4c9df75d5bdb558f899a38bf4d31778
   background-image: url("ship-pic/ship-pic.PNG");
   background-repeat: no-repeat;
   background-position: center;
