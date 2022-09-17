@@ -65,7 +65,7 @@ body{
 
 .ship {  
   align-self: center;
-  width:60em;
+  width:100em;
   height: 60rem;
   background-image: url("ship-pic/ship-pic.PNG");
   background-repeat: no-repeat;
@@ -215,12 +215,5 @@ article{
   }
 .story{
     margin-top: 6rem ;
-  }
-  
-  .ship{
-    width: 40rem;
-    height: 60rem;
-    align-self: starting;
-    
   }
 }
