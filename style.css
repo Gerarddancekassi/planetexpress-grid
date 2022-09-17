@@ -82,6 +82,7 @@ p{
 /* our crew */
 
 .grid-container { 
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -174,7 +175,7 @@ p{
 article{
   padding: 2em;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 550px){
   /* For mobile phones: */
    nav ul {
     flex-direction: column;
