@@ -220,6 +220,7 @@ article{
   .ship{
     width: 40rem;
     height: 60rem;
+    align-self: starting;
     
   }
 }
