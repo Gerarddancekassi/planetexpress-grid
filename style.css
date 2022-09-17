@@ -11,8 +11,9 @@ h1{
   font-size: 2rem;
 }
 root{
-    --bg-color: white;
+    --bg-white: white;
     --txt-color: white;
+    --bg-dark: #121212;
 }
 /* navigation bar */
 nav {
@@ -222,3 +223,12 @@ article{
     
   }
 
+  @media (prefers-color-scheme: dark){
+    body{
+      background-color: var(--bg-dark);
+      color: var(--bg-white);
+    }
+
+  
+  }
+  
