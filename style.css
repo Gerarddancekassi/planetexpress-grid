@@ -64,7 +64,7 @@ body{
 }
 
 .ship {  
-  align-self: flex-end;
+  align-self: center
   width:60em;
   height: 60rem;
   background-image: url("ship-pic/ship-pic.PNG");
