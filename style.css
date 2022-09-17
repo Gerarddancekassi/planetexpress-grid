@@ -10,7 +10,7 @@ html, body {
 h1{
   font-size: 2rem;
 }
-root{
+:root{
     --bg-white: white;
     --txt-color: white;
     --bg-dark: #121212;
@@ -37,6 +37,7 @@ body{
   flex-direction: column;
   justify-content: center;
   margin: 0;
+
 }
 /* top container */
 .top-container{
@@ -72,11 +73,6 @@ body{
 
 .story {
   padding-left: 2em;
-  padding-right: 2em;
-}
-
-p{
-  padding-right: 2em;
   padding-right: 2em;
 }
 /* our crew */
@@ -213,5 +209,12 @@ article{
   }
 .story{
     margin-top: 6rem ;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: var(--bg-dark);
+    color: var(--bg-white);
   }
 }
