@@ -64,13 +64,10 @@ body{
 
 .ship {  
   width:100vw;
-  padding-top: 0;
-  padding-bottom: 60em;
+  padding-bottom: 20em;
   background-image: url("ship-pic/ship-pic.PNG");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60em;
-
 }
 
 .story {
