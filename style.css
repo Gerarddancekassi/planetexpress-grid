@@ -59,25 +59,23 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 2em;
 
 }
 
 .ship {  
-  align-self: center;
   width:100vw;
-  padding-top: 60em;
+  padding-top: 0;
   padding-bottom: 60em;
   background-image: url("ship-pic/ship-pic.PNG");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 60em;
 
 }
 
 .story {
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 
@@ -103,25 +101,25 @@ body{
 }
 .fry, .leela, .bender{
   max-width: 18em;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    text-align: center;
-    padding: 2em;
-    transition-property: transform;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-out;
-    background-color: var(--bg-color);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+  padding: 2em;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  background-color: var(--bg-color);
 
 }
 
 .fry:hover, .bender:hover, .leela:hover {
-      transform: scale(1.1);
-      box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
-      cursor: pointer;
-      z-index: 4;
-    }
+  transform: scale(1.1);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  z-index: 4;
+}
 .grid-container div {
   display: flex;
   flex-direction: column;
