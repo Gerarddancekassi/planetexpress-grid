@@ -28,7 +28,7 @@ nav ul{
     justify-content: space-around;
 }
 nav img{
-  width: 2em;
+  width: 3em;
   position: relative;
   left: 0;
 }
@@ -40,6 +40,7 @@ body{
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  padding: 0;
 
 }
 /* top container */
@@ -50,7 +51,6 @@ body{
 }
 
 .left-container{
-  width: 50%;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -58,8 +58,7 @@ body{
 }
 
 /* ship */
-.ship-flex-container {  
-  width: 100%;
+.ship-flex-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -78,8 +77,9 @@ body{
   padding-left: 2em;
   padding-right: 2em;
 }
-/* our crew */
+/* ------------------------- */
 
+/* our crew */
 .grid-container { 
   box-sizing: border-box;
   display: grid;
@@ -108,7 +108,6 @@ body{
   transition-timing-function: ease-out;
 
 }
-
 .fry:hover, .bender:hover, .leela:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
@@ -150,23 +149,18 @@ body{
 .fry { 
   grid-area: fry; 
 }
-
-
 .title {
   color: grey;
   font-size: 18px;
 }
-
-
 .bender { 
   grid-area: bender; 
 }
-
 .leela { 
   grid-area: leela; 
 
 }
-
+/* ------------------------- */
 article{
   padding: 2em;
 }
