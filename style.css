@@ -66,9 +66,10 @@ body {
 }
 
 .ship {
-  width: 100vw;
+  width: 1015px;
   padding-bottom: 20em;
   background-image: url("ship-pic/ship-pic.PNG");
+  height: 508px;
   background-repeat: no-repeat;
   background-position: center;
 }
