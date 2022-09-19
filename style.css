@@ -2,55 +2,56 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-size: 1.2em;
   font-family: poppins, "sans-serif";
 }
 
-h1{
+h1 {
   font-size: 2rem;
 }
-:root{
-    --bg-white: white;
-    --txt-color: white;
-    --bg-dark: #121212;
+:root {
+  --bg-white: white;
+  --txt-color: white;
+  --bg-dark: #121212;
 }
 /* navigation bar */
 nav {
-    display: flex;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 }
-nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-nav img{
+nav img {
   width: 3em;
   position: relative;
   left: 0;
 }
 
-
 /* main section */
-body{
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-
 }
 /* top container */
-.top-container{
+.top-container {
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.left-container{
+.left-container {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -62,11 +63,10 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
 
-.ship {  
-  width:100vw;
+.ship {
+  width: 100vw;
   padding-bottom: 20em;
   background-image: url("ship-pic/ship-pic.PNG");
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@ body{
 /* ------------------------- */
 
 /* our crew */
-.grid-container { 
+.grid-container {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -91,24 +91,25 @@ body{
   grid-template-rows: auto;
   margin: 1% auto;
   gap: 0 4%;
-  grid-template-areas:
-    "fry bender leela";
-  
+  grid-template-areas: "fry bender leela";
 }
-.fry, .leela, .bender{
+.fry,
+.leela,
+.bender {
   max-width: 18em;
   box-sizing: border-box;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   text-align: center;
   padding: 2em;
   transition-property: transform;
   transition-duration: 0.25s;
   transition-timing-function: ease-out;
-
 }
-.fry:hover, .bender:hover, .leela:hover {
+.fry:hover,
+.bender:hover,
+.leela:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -119,92 +120,96 @@ body{
   flex-direction: column;
   align-items: center;
 }
-.circle{
+.circle {
   margin-top: 15px;
   border: 1px solid black;
   height: 8em;
   width: 8em;
   border-radius: 50%;
-  
 }
 
-.fry .circle{
+.fry .circle {
   background-image: url("https://oyster.ignimgs.com/mediawiki/apis.ign.com/futurama/1/11/Fry.jpg");
   background-size: 250px;
-  background-position:50% 50%;
-  background-repeat:no-repeat;   
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
-.bender .circle{
+.bender .circle {
   background-image: url("https://deadline.com/wp-content/uploads/2022/05/Futurama-Bender.jpg?w=1000");
   background-size: 800px;
-  background-position:45% 15%;
-  background-repeat:no-repeat;   
+  background-position: 45% 15%;
+  background-repeat: no-repeat;
 }
-.leela .circle{
+.leela .circle {
   background-image: url("https://assets.mycast.io/actor_images/actor-turanga-leela-238366_large.jpg?1625486931");
   background-size: 250px;
-  background-position:70% 15%;
-  background-repeat:no-repeat;   
+  background-position: 70% 15%;
+  background-repeat: no-repeat;
 }
-.fry { 
-  grid-area: fry; 
+.fry {
+  grid-area: fry;
 }
 .title {
   color: grey;
   font-size: 18px;
 }
-.bender { 
-  grid-area: bender; 
+.bender {
+  grid-area: bender;
 }
-.leela { 
-  grid-area: leela; 
-
+.leela {
+  grid-area: leela;
 }
 /* ------------------------- */
-article{
+article {
   padding: 2em;
 }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
   /* For mobile phones: */
-   nav ul {
+  nav ul {
     flex-direction: column;
     align-items: flex-start;
     text-align: center;
   }
 
-.grid-container { 
-  display: grid;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-auto-columns: auto;
-  gap: 4% 0;
-  grid-template-areas:
-    "fry"
-    "bender"
-    "leela";
-}
-
-.bender { grid-area: bender; }
-
-.fry { grid-area: fry; }
-
-.leela { grid-area: leela; }
-
-.ship-flex-container{
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .grid-container {
+    display: grid;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: auto;
+    gap: 4% 0;
+    grid-template-areas:
+      "fry"
+      "bender"
+      "leela";
   }
-.story{
-    margin-top: 6rem ;
+
+  .bender {
+    grid-area: bender;
+  }
+
+  .fry {
+    grid-area: fry;
+  }
+
+  .leela {
+    grid-area: leela;
+  }
+
+  .ship-flex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .story {
+    margin-top: 6rem;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  body{
+  body {
     background-color: var(--bg-dark);
     color: var(--bg-white);
   }
