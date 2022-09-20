@@ -24,7 +24,7 @@ nav {
     rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 }
 nav ul {
-  width: 100%;
+  width: 100vw;
   list-style: none;
   display: flex;
   align-items: center;
